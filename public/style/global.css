@@ -28,10 +28,32 @@ a {
 }
 nav {
     width: 50%;
-    display: flex;
-    justify-content: space-around;
+
 }
+.Nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+.Nav-item {
+    padding: 5px;
+}
+
 .Nav-item:nth-child(1) { background: #4285F4; }
 .Nav-item:nth-child(2) { background: #DB4437; }
 .Nav-item:nth-child(3) { background: #F4B400; }
 .Nav-item:nth-child(4) { background: #0F9D58ed; }
+
+.Button {
+    background: #4285F4;
+    border: solid 3px black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6%;
+    transition: 0.5s;
+}
+.Button:hover {
+    background: white;
+    border: solid 3px black;
+    color: #4285F4;
+}
