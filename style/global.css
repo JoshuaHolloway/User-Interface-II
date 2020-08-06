@@ -14,6 +14,12 @@
     --debug-border-2: none;
     /* --debug-border-3: solid 1px blue; */
     --debug-border-3: none;
+
+    /* Breakpoints: */
+    --sm: 576px;
+    --md: 768px;
+    --lg: 992px;
+    --xl: 1200px;
 }
 a {
     text-decoration: none;

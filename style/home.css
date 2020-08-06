@@ -1,9 +1,17 @@
+@import url('/style/global.css');
+
 #Section-hero {
     display: flex;
     padding: 1% 2%;
 }
 #Section-hero > .left {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Section-hero > .left > .img {
+    width: 90%;
 }
 #Section-hero > .right {
     width: 50%;
@@ -13,4 +21,34 @@
 }
 #Section-hero > .right > .text {
     width: 90%;
+}
+/* - - - - - - - - - - - - - - - - */
+/* - Section-portfolio - - - - - - - */
+/* - - - - - - - - - - - - - - - - */
+#Section-portfolio {
+    display: flex;
+    /* padding: 2% 5%; */
+}
+@media screen and (min-width: 1200px) {
+    #Section-portfolio {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #Section-portfolio {
+        flex-direction: column;
+    }
+}
+.Col { 
+    flex-grow: 1; 
+    display: flex;
+    justify-content: space-around;
+}
+.Image-container {
+    width: 256px;
+    border: solid black 2px;
+}
+.Image-container > img {
+    width: 100%;
 }
