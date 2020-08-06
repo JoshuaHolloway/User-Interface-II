@@ -74,12 +74,14 @@ main {
     width: 100%;
     max-width: 512px;
     border: solid black 2px;
+    padding: 15px;
 }
 .Image-container > img {
     width: 100%;
 }
 .Image-container > h5 {
     text-align: center;
+    font-size: 22px;
 }
 
 /* -------------------- */
