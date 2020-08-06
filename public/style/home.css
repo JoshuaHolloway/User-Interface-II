@@ -73,27 +73,11 @@
 .Image-container > h5 {
     text-align: center;
 }
-/* - - - - - - - - - - - - - - - - */
-/* - - - - - footer- - - - - - - - */
-/* - - - - - - - - - - - - - - - - */
-
-
-.Footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    background: lightblue;
-}
-.Footer-container {
-    text-align: center;
-}
 
 /* -------------------- */
 /* Remaining MVP Tasks: */
 /* -------------------- */
 
- /* A My Projects button that links to the projects page */
 
  /* A Contact Me button that links to the contact page */
 
