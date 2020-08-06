@@ -31,6 +31,9 @@ header {
     background: lightblue;
     padding: 3%;
 }
+header > a {
+    color: black;
+}
 nav {
     width: 50%;
 }

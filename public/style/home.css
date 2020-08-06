@@ -1,5 +1,9 @@
 @import url('/style/global.css');
 
+main {
+    background: sandybrown;
+}
+
 #Section-hero {
     display: flex;
     padding: 1% 2%;
@@ -12,6 +16,10 @@
 }
 #Section-hero > .left > .img {
     width: 90%;
+}
+#Section-hero > .left > .img > img  {
+    border-radius: 50%;
+    border: 3px black solid;
 }
 #Section-hero > .right {
     width: 50%;
