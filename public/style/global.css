@@ -37,6 +37,13 @@ header > a {
 nav {
     width: 50%;
 }
+.Active {
+    /* opacity: 0.5; */
+    border: black solid 1px;
+}
+.Active > a {
+    color: black;
+}
 .Nav-container {
     display: flex;
     justify-content: space-between;
@@ -90,4 +97,8 @@ nav {
 }
 .Footer-container {
     text-align: center;
+}
+.Footer-container > h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
 }
