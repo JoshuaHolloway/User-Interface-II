@@ -3,17 +3,19 @@
     margin:0;
     padding:0;
     max-width:100%;
-    border:1px solid grey;
+
+    /* debug */
+    /* border: 1px solid grey; */
 }
 :root {
-    /* --debug-border-0: solid 1px grey; */
-    --debug-border-0: none;
-    /* --debug-border-1: solid 1px red; */
-    --debug-border-1: none;
-    /* --debug-border-2: solid 1px green; */
-    --debug-border-2: none;
-    /* --debug-border-3: solid 1px blue; */
-    --debug-border-3: none;
+    --debug-border-0: solid 5px grey;
+    /* --debug-border-0: none; */
+    --debug-border-1: solid 5px red;
+    /* --debug-border-1: none; */
+    --debug-border-2: solid 5px green;
+    /* --debug-border-2: none; */
+    --debug-border-3: solid 5px blue;
+    /* --debug-border-3: none; */
 
     /* Breakpoints: */
     --sm: 576px;
