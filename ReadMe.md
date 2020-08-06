@@ -1,3 +1,15 @@
+## Josh Live Deployed URL
+* https://003-css-layout.netlify.app
+
+## Josh Pull Request URL
+* 
+
+## Josh Notes:
+* The image section is responsive.
+    * At desktop screen sizes (>=1200px) there are 4 projects listed per row.
+    * When the screen width drops below 1200px, there are 2 projects listed per row.
+    * When the screen width drops below 800 px, there is 1 project listed per row.
+
 # Flexbox Module Challenge
 
 The module challenge is the afternoon project or assignment that students work through independently. This expands on the guided project completed earlier with the instructor.
