@@ -1,0 +1,16 @@
+#Section-hero {
+    display: flex;
+    padding: 1% 2%;
+}
+#Section-hero > .left {
+    width: 50%;
+}
+#Section-hero > .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Section-hero > .right > .text {
+    width: 90%;
+}
