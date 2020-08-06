@@ -23,7 +23,7 @@
     width: 90%;
 }
 /* - - - - - - - - - - - - - - - - */
-/* - Section-portfolio - - - - - - - */
+/* - Section-portfolio - - - - - - */
 /* - - - - - - - - - - - - - - - - */
 #Section-portfolio {
     display: flex;
@@ -71,5 +71,21 @@
     width: 100%;
 }
 .Image-container > h5 {
+    text-align: center;
+}
+/* - - - - - - - - - - - - - - - - */
+/* - - - - - footer- - - - - - - - */
+/* - - - - - - - - - - - - - - - - */
+
+
+.Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background: grey;
+}
+.Footer-container {
+
     text-align: center;
 }
