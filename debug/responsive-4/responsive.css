@@ -29,12 +29,4 @@
     justify-content: space-around;
 }
 
-.Image-container {
-
-    width: 256px;
-    border: solid black 2px;
-}
-
-.Image-container > img {
-    width: 100%;
-}
+ 
