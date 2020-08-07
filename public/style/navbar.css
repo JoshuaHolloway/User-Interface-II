@@ -113,7 +113,7 @@ nav > .Navbar_Toggler > .Line {
     transform: translateY(var(--nav-height-offscreen));
 }
 #Section-portfolio {
-    transform: translateY(calc(var(--nav-height-offscreen) + 75px));
+    transform: translateY(calc(var(--nav-height-offscreen) + 120px));
 }
 
 header {
