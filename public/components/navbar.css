@@ -65,16 +65,12 @@ nav.clicked {
 nav > .Navbar_Collapse {
     height: 100px;
     width: 100px;
-
-    display: flex;
     flex-direction: column;
 }
 
 nav > .Navbar_Toggler {
     height: 100px;
     width: 100px;
-
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
