@@ -1,5 +1,21 @@
+* {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
+}
+
+nav {
+    height: 300px;
+    background: lightblue;
+
+    transform: translateY(-180px);
+    transition: transform 0.5s;
+}
+nav.clicked {
+    transform: translateY(0px);
+    transition: transform 0.5s;
 }
 
 .Navbar_Nav {
@@ -37,12 +53,15 @@ a {
     }
 }
 
-.Navbar_Collapse {
+nav > .Navbar_Collapse {
     height: 100px;
     width: 100px;
+
+    display: flex;
+    flex-direction: column;
 }
 
-.Navbar_Collapse > .Navbar_Toggler {
+nav > .Navbar_Toggler {
     height: 100px;
     width: 100px;
 
@@ -51,7 +70,7 @@ a {
     justify-content: space-around;
 }
 
-.Line {
+nav > .Navbar_Toggler > .Line {
     width: 100%;
     height: 5px;
     background: black;
