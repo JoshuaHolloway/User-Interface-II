@@ -101,3 +101,9 @@ nav > .Navbar_Toggler > .Line {
     border-color: rgba(0,0,0,.1);
     border-radius: 25%;
 }
+
+main {
+    transform: translateY(var(--nav-height-offscreen));
+    position: relative;
+    z-index: -1;
+}
