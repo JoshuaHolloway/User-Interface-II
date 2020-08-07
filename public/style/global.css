@@ -57,6 +57,7 @@ body {
     align-items: center;
     height: 150px;
     background: lightblue;
+    margin: 40px;
 }
 .Footer-container {
     text-align: center;
