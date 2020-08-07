@@ -1,9 +1,5 @@
 @import url('/style/global.css');
 
-main {
-    background: sandybrown;
-}
-
 #Section-hero {
     display: flex;
     padding: 1% 2%;
