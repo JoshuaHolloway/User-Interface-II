@@ -33,13 +33,31 @@ nav.clicked {
 }
 
 .Navbar_Nav > .Nav_item { 
-    flex-grow: 1;
+    /* flex-grow: 1; */
     text-align: center;
+
+    padding: 5px 8px;
+    border-radius: 5%;
+
+    color: white;
+    transition: 0.5s;
 }
-.Navbar_Nav > .Nav_item:nth-child(1) { background: red; }
-.Navbar_Nav > .Nav_item:nth-child(2) { background: blue; }
-.Navbar_Nav > .Nav_item:nth-child(3) { background: green; }
-.Navbar_Nav > .Nav_item:nth-child(4) { background: orange; }
+.Navbar_Nav > .Nav_item:nth-child(1) { background: #4285F4; }
+.Navbar_Nav > .Nav_item:nth-child(2) { background: #DB4437; }
+.Navbar_Nav > .Nav_item:nth-child(3) { background: #F4B400; }
+.Navbar_Nav > .Nav_item:nth-child(4) { background: #0F9D58ed; }
+
+.Nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+
+.Navbar_Nav > .Nav_item:hover { background: white;}
+.Navbar_Nav > .Nav_item:nth-child(1):hover { color: #4285F4;}
+.Navbar_Nav > .Nav_item:nth-child(2):hover { color: #DB4437; }
+.Navbar_Nav > .Nav_item:nth-child(3):hover { color: #F4B400; }
+.Navbar_Nav > .Nav_item:nth-child(4):hover { color: #0F9D58; }
 
 
 @media screen and (min-width: 992px) { /* >= 992 */
