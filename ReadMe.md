@@ -9,6 +9,13 @@
     * At desktop screen sizes (>=1200px) there are 4 projects listed per row.
     * When the screen width drops below 1200px, there are 2 projects listed per row.
     * When the screen width drops below 800 px, there is 1 project listed per row.
+* The navbar is responsive.
+    * When screen width drops below 992px then the navbar collapses into an interactive hamburger bar 
+      with a CSS transition which slides down to reveal the nav-links hidden in a column off of the screen.
+* These responsive features are implemented in native HTML, CSS, and Vanilla JavaScript.
+* There is a 3D-transition added to the last project image in the portfolio section.  I adapted this code from a tutorial online.
+    * Click it and it flips over as if fliping over an actual 3D sheet of paper to reveal the details of the project on the back.
+
 
 # Flexbox Module Challenge
 
