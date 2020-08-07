@@ -71,9 +71,11 @@ nav.clicked {
 }
 
 @media screen and (max-width: 991px) { /* < 992 */
+    
     .Navbar_Nav {
         display: flex;
         flex-direction: column;
+        padding-left: 200px;
     }
     .Navbar_Toggler {
         display: flex;
