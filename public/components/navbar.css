@@ -6,7 +6,8 @@
 :root {
     --nav-padding: 2%;
     --nav-height: 200px;
-    --nav-height-offscreen: calc(-0.6 * var(--nav-height))
+    --nav-height-offscreen: calc(-0.6 * var(--nav-height));
+    --nav-space-between-hamburger-and-links-collapsed: 25px;
 }
 a { text-decoration: none; }
 nav {
@@ -44,11 +45,11 @@ nav.clicked {
 @media screen and (min-width: 992px) { /* >= 992 */
     .Navbar_Nav {
         display: flex;
-        border: solid purple 5px;
+        flex-direction: row;
     }
-    .Navbar_Collapse {
+    /* .Navbar_Collapse {
         display: none;
-    }
+    } */
     .Navbar_Toggler {
         display: none;
     }
@@ -56,8 +57,8 @@ nav.clicked {
 
 @media screen and (max-width: 991px) { /* < 992 */
     .Navbar_Nav {
-        display: none;
-        border: solid green 5px;
+        display: flex;
+        flex-direction: column;
     }
     .Navbar_Collapse {
         display: flex;
@@ -83,6 +84,8 @@ nav > .Navbar_Toggler {
     justify-content: space-evenly;
     align-items: center;
     border-radius: 12%;
+
+    margin-top: var(--nav-space-between-hamburger-and-links-collapsed);
 }
 
 nav > .Navbar_Toggler > .Line {
