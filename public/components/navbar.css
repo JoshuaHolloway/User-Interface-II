@@ -47,9 +47,6 @@ nav.clicked {
         display: flex;
         flex-direction: row;
     }
-    /* .Navbar_Collapse {
-        display: none;
-    } */
     .Navbar_Toggler {
         display: none;
     }
@@ -60,18 +57,9 @@ nav.clicked {
         display: flex;
         flex-direction: column;
     }
-    .Navbar_Collapse {
-        display: flex;
-    }
     .Navbar_Toggler {
         display: flex;
     }
-}
-
-nav > .Navbar_Collapse {
-    height: 100px;
-    width: 100px;
-    flex-direction: column;
 }
 
 nav > .Navbar_Toggler {
