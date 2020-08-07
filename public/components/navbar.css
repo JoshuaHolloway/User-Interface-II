@@ -5,14 +5,17 @@
 }
 :root {
     --nav-padding: 2%;
+    --nav-height: 200px;
+    --nav-height-offscreen: calc(-0.6 * var(--nav-height))
 }
 a { text-decoration: none; }
 nav {
     padding: var(--nav-padding);
-    height: 300px;
+    height: var(--nav-height);
     background: lightblue;
 
-    transform: translateY(-180px);
+    /* transform: translateY(-180px); */
+    transform: translateY(var(--nav-height-offscreen));
     transition: transform 0.5s;
 
     display: flex;
