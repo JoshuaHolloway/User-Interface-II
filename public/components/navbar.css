@@ -22,6 +22,9 @@ a {
         display: flex;
         border: solid purple 5px;
     }
+    .Navbar_Collapse {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 991px) { /* < 992 */
@@ -29,4 +32,28 @@ a {
         display: none;
         border: solid green 5px;
     }
+    .Navbar_Collapse {
+        display: inline-block;
+    }
+}
+
+.Navbar_Collapse {
+    height: 100px;
+    width: 100px;
+}
+
+.Navbar_Collapse > .Navbar_Toggler {
+    height: 100px;
+    width: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Line {
+    width: 100%;
+    height: 5px;
+    background: black;
+    border-radius: 25%;
 }
