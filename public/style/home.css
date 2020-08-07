@@ -75,6 +75,7 @@ main {
     max-width: 512px;
     border: solid black 2px;
     padding: 15px;
+    z-index: 5 !important;
 }
 .Image-container > img {
     width: 100%;
