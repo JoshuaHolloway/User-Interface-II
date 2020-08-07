@@ -2,7 +2,7 @@
 * https://003-css-layout.netlify.app
 
 ## Josh Pull Request URL
-* 
+* https://github.com/JoshuaHolloway/User-Interface-II/pull/1
 
 ## Josh Notes:
 * The image section is responsive.
