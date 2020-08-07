@@ -40,9 +40,6 @@
             <!--     Step 2: Change flex-direction on Navbar_Nav to column. -->
         </nav>
     </header>
-
-    <!-- <header>
-    </header> -->
     <!-- ============================================== -->
     <section id="Section-hero"">
         <div class="left">
@@ -65,9 +62,7 @@
             </div>
         </div>
     </section>
-
-    <!-- - - - - - - - - - - - - - - - - -  -->
-
+    <!-- ============================================== -->
     <section id="Section-portfolio">
         <div class="Row">
             <div class="Col-outer">
@@ -139,74 +134,16 @@
             </div> <!-- /.Col-outer -->
         </div> <!-- /.Row -->
 
-
-
-
-        <style>
-            .Scene {
-                width: 100%;
-                height: 100%;
-                perspective: 600px;
-            }
-            .Card {
-                width: 100%;
-                height: 100%;
-                position: relative;
-                transition: transform 1s;
-                transform-style: preserve-3d;
-            }
-            .Card__Face {
-                height: 100%;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                padding: 10%;
-                color: white;
-                backface-visibility: hidden;
-                position: absolute;
-                height: 100%;
-                width: 100%;
-            }
-            .Face--Front {
-                background: salmon;
-                background-image: url('./img/lena.png');
-                background-size: cover;
-                font-size: 32px;
-            }
-            .Face--Back { 
-                background: hotpink; 
-                transform: rotateY( 180deg );
-                font-size: 24px;
-            }
-            .Card.Is-Flipped {
-                transform: rotateY(180deg);
-            }
-        </style>
-
-
-        <script>
-            const card = document.querySelector('.Card');
-            card.addEventListener( 'click', () => {
-                card.classList.toggle('Is-Flipped');
-            });
-        </script>
-
-
-
-
-
-
-        </section>
-
-        <footer class="Footer">
-            <div class="Footer-container">
-                <h3>Like what you see?</h3>
-                <a class="Button" href="/contact">Contact Me</a>
-            </div>
-        </footer>    
+    </section>
+    <!-- ============================================== -->
+    <footer class="Footer">
+        <div class="Footer-container">
+            <h3>Like what you see?</h3>
+            <a class="Button" href="/contact">Contact Me</a>
+        </div>
+    </footer>    
     <!-- ============================================== -->
     <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/card-flip.js"></script>
 </body>
 </html>
