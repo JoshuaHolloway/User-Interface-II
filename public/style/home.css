@@ -130,7 +130,7 @@
 
 /* Animations: */
 .Face--Front { animation: Pulse 2s infinite; }
-h1, h2, i {   animation: Float 2s infinite; }
+h1, h2, h6, i {   animation: Float 2s infinite; }
 @keyframes Float {
     0% {   transform: translateY(0px);  color: red;   }
     50% {  transform: translateY(15px); color: green; }
