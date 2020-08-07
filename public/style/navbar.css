@@ -11,7 +11,7 @@
 }
 a { text-decoration: none; }
 nav {
-    padding: var(--nav-padding);
+    /* padding: var(--nav-padding); */
     height: var(--nav-height);
     background: lightblue;
 
@@ -104,8 +104,18 @@ nav > .Navbar_Toggler > .Line {
     border-radius: 25%;
 }
 
-main {
+#Section-hero {
     transform: translateY(var(--nav-height-offscreen));
     position: relative;
     z-index: -1;
+}
+#Section-portfolio {
+    transform: translateY(var(--nav-height-offscreen));
+}
+#Section-portfolio {
+    transform: translateY(calc(var(--nav-height-offscreen) + 75px));
+}
+
+header {
+    padding: 5px;
 }
