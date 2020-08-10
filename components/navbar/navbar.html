@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav id="Navbar">
-        <button class="Hamburger">
+        <button class="Hamburger" onclick="openSlideMenu()">
             <span class="Line"></span>
             <span class="Line"></span>
             <span class="Line"></span>
@@ -19,11 +19,19 @@
 
         <ul class="Navbar_Nav">
             <li class="Nav_Item"><a href="/">Home</a></li>
-            <li class="Nav_Item"><a href="/about">Home</a></li>
+            <li class="Nav_Item"><a href="/about">About</a></li>
             <li class="Nav_Item"><a href="/contact">Contact</a></li>
             <li class="Nav_Item"><a href="/projects">Projects</a></li>
         </ul>
     </nav>
+
+    <div id="Side-Menu" class="Side-Nav">
+        <button class="Btn-Close" onclick="closeSlideMenu()">&times;</button>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Services</a>
+        <a href="/projects">Contact</a>
+    </div>
 
 
     <script src="./js/navbar.js"></script>
