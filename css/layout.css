@@ -1,17 +1,58 @@
-
-.Page-Container { /* >= 700 */
+/* XX-Large:  1400 and up */
+.Page-Container { /* >= 1400 */
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 200px 200px 200px 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(12, 100px);
     grid-template-areas:
-        "nav          nav         nav         nav"
-        "header-l     header-l    header-r    header-r"
-        "project-1    project-2   project-3   project-4"
-        "project-5    project-6   project-7   project-8"
-        "footer       footer      footer      footer";
+        "nav          nav         nav         nav         nav          nav"
+
+        "header-r     header-r    project-1   project-1   project-2    project-2"
+        "header-r     header-r    project-1   project-1   project-2    project-2"
+
+        "header-l     header-l    project-3   project-3   project-4    project-4"
+        "header-l     header-l    project-3   project-3   project-4    project-4"
+
+        "project-5    project-5   project-5   project-6   project-6    project-6"
+        "project-5    project-5   project-5   project-6   project-6    project-6"
+        "project-5    project-5   project-5   project-6   project-6    project-6"
+
+        "project-7    project-7   project-7   project-8   project-8    project-8"
+        "project-7    project-7   project-7   project-8   project-8    project-8"
+        "project-7    project-7   project-7   project-8   project-8    project-8"
+
+        "footer       footer      footer      footer      footer       footer";
 }
-@media (max-width: 699px) { /* < 700 */
+/* X-Large:  1200 <= x < 1400 */
+@media (max-width: 1399px) { /* < 1400 */
+    .Page-Container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 200px 200px 200px 100px;
+        grid-template-areas:
+            "nav          nav         nav         nav"
+            "header-l     header-l    header-r    header-r"
+            "project-1    project-2   project-3   project-4"
+            "project-5    project-6   project-7   project-8"
+            "footer       footer      footer      footer";
+    }
+}
+
+/* Large:  992 <= x < 1200 */
+@media (max-width: 1199px) { /* < 1200 */
+    .Page-Container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 200px 200px 200px 100px;
+        grid-template-areas:
+            "nav          nav         nav         nav"
+            "header-l     header-l    header-r    header-r"
+            "project-1    project-2   project-3   project-4"
+            "project-5    project-6   project-7   project-8"
+            "footer       footer      footer      footer";
+    }
+}
+
+/* Medium:  768 <= x < 992 */
+@media (max-width: 991px) { /* < 992 */
     .Page-Container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 
@@ -35,18 +76,63 @@
     }
 }
 
+/* Small:  576 <= x < 768 */
+@media (max-width: 767px) { /* < 768 */
+    .Page-Container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 100px);
+        grid-template-areas:
+        "nav      "
+        "header-l " 
+        "header-r "
+        "project-1"
+        "project-2"
+        "project-3"
+        "project-4"
+        "project-5"
+        "project-6"
+        "project-7"
+        "project-8"
+        "footer   ";
+    }
+}
+
+/* X-Small:        x < 576 */
+@media (max-width: 575px) { /* < 576 */
+    .Page-Container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 100px);
+        grid-template-areas:
+        "nav      "
+        "header-l " 
+        "header-r "
+        "project-1"
+        "project-2"
+        "project-3"
+        "project-4"
+        "project-5"
+        "project-6"
+        "project-7"
+        "project-8"
+        "footer   ";
+    }
+}
+
 nav {
-    border: solid green 5px;
     grid-area: nav;
+    background: cyan;
+    border: solid green 5px;
 }
 
 #Header-Left {
     grid-area: header-l;
     border: solid orange 5px;
+    background: palegreen;
 }
 #Header-Right {
     grid-area: header-r;
     border: solid orangered 5px;
+    background: yellowgreen;
 }
 
 .Project {
@@ -73,5 +159,6 @@ nav {
 
 footer {
     grid-area: footer;
-    border: solid yellow 5px;
+    border: solid blue 5px;
+    background: plum;
 }
