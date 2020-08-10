@@ -27,8 +27,13 @@ nav {
 .Navbar_Nav > .Nav_Item {
     height: 100%;
     width: 100%;
+}
+.Navbar_Nav > .Nav_Item > a {
     display: grid;
     place-items: center;
+
+    height: 100%;
+    width: 100%;
 }
 .Navbar_Nav > .Nav_Item:nth-child(1) { background: #4285F4; }
 .Navbar_Nav > .Nav_Item:nth-child(2) { background: #DB4437; }
