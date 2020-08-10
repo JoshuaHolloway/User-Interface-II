@@ -27,19 +27,33 @@ nav {
 .Navbar_Nav > .Nav_Item {
     height: 100%;
     width: 100%;
+    transition: background 0.4s ease;
 }
 .Navbar_Nav > .Nav_Item > a {
     display: grid;
     place-items: center;
-
     height: 100%;
     width: 100%;
+    color: white;
+    transition: all 0.3s ease;
 }
+.Navbar_Nav > .Nav_Item > a {  }
 .Navbar_Nav > .Nav_Item:nth-child(1) { background: #4285F4; }
 .Navbar_Nav > .Nav_Item:nth-child(2) { background: #DB4437; }
 .Navbar_Nav > .Nav_Item:nth-child(3) { background: #F4B400; }
-.Navbar_Nav > .Nav_Item:nth-child(4) { background: #0F9D58ed; }
-.Navbar_Nav > .Nav_Item > a { color: white; }
+.Navbar_Nav > .Nav_Item:nth-child(4) { background: #0F9D58; }
+
+.Navbar_Nav > .Nav_Item:nth-child(1):hover,
+.Navbar_Nav > .Nav_Item:nth-child(2):hover,
+.Navbar_Nav > .Nav_Item:nth-child(3):hover,
+.Navbar_Nav > .Nav_Item:nth-child(4):hover { background: white; }
+
+.Navbar_Nav > .Nav_Item:nth-child(1):hover a { color: #4285F4 !important; font-weight: bold; transform: scale(2, 2); }
+.Navbar_Nav > .Nav_Item:nth-child(2):hover a { color: #DB4437 !important; font-weight: bold; transform: scale(2, 2); }
+.Navbar_Nav > .Nav_Item:nth-child(3):hover a { color: #F4B400 !important; font-weight: bold; transform: scale(2, 2); }
+.Navbar_Nav > .Nav_Item:nth-child(4):hover a { color: #0F9D58 !important; font-weight: bold; transform: scale(2, 2); }
+
+
 
 .Side-Nav{
     width: 0; /* Initially collapsed */
