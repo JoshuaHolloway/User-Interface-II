@@ -1,0 +1,37 @@
+main {
+    display: flex;
+    height: 100vh;
+}
+
+@media screen and (min-width: 800px) {
+    main {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+nav,article {
+    flex-grow: 1;
+}
+
+nav {
+    background: lightblue;
+    display: flex;
+    justify-content: space-around;
+}
+article {
+    background: lightcoral;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: solid black 2px;
+}

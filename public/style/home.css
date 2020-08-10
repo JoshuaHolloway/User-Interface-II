@@ -1,0 +1,159 @@
+@import url('/style/global.css');
+
+#Section-hero {
+    display: flex;
+    padding: 1% 2%;
+}
+#Section-hero > .left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Section-hero > .left > .img {
+    width: 90%;
+}
+#Section-hero > .left > .img > img  {
+    border-radius: 50%;
+    border: 3px black solid;
+}
+#Section-hero > .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Section-hero > .right > .text {
+    width: 90%;
+}
+/* - - - - - - - - - - - - - - - - */
+/* - Section-portfolio - - - - - - */
+/* - - - - - - - - - - - - - - - - */
+#Section-portfolio {
+    display: flex;
+    /* padding: 2% 5%; */
+}
+    @media screen and (min-width: 1200px) { /* >= 1200px */
+        #Section-portfolio {
+            flex-direction: row;
+        }
+    }
+
+    @media screen and (max-width: 1200px) { /* < 1200px */
+        #Section-portfolio {
+            flex-direction: column;
+        }
+    }
+.Col-outer { 
+    flex-grow: 1; 
+    display: flex;
+    justify-content: space-around;
+}
+    
+    @media screen and (min-width: 800px) { /* >= 800px */
+        .Col-outer {
+            flex-direction: row;
+        }
+    }
+
+    @media screen and (max-width: 800px) { /* < 800px */
+        .Col-outer {
+            flex-direction: column;
+        }
+        .Col-inner {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+.Col-inner {
+    width: 100%;
+}
+.Image-container {
+    width: 100%;
+    height: 100%;
+    max-width: 512px;
+    border: solid black 2px;
+    padding: 15px;
+    z-index: 5 !important;
+}
+.Image-container > img {
+    width: 100%;
+}
+.Image-container > h5 {
+    text-align: center;
+    font-size: 22px;
+}
+
+/* Adapted from: https://3dtransforms.desandro.com/perspective */
+.Scene {
+    width: 100%;
+    height: 100%;
+    perspective: 600px;
+}
+.Card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.Card__Face {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10%;
+    color: white;
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.Face--Front {
+    background: salmon;
+    background-image: url('../img/lena.png');
+    background-size: cover;
+    font-size: 32px;
+}
+.Face--Back { 
+    background: hotpink; 
+    transform: rotateY( 180deg );
+    font-size: 24px;
+}
+.Card.Is-Flipped {
+    transform: rotateY(180deg);
+}
+
+/* Animations: */
+.Face--Front { animation: Pulse 2s infinite; }
+h1, h2, h6, i {   animation: Float 2s infinite; }
+@keyframes Float {
+    0% {   transform: translateY(0px);  color: red;   }
+    50% {  transform: translateY(15px); color: green; }
+    100% { transform: translateY(0px);  color: red    }
+}
+@keyframes Pulse {
+    0% {   transform: scale3d(1, 1, 1); }
+    50% {  transform: scale3d(1.05, 1.05, 1); }
+    100% { transform: scale3d(1, 1, 1); }
+} 
+
+ /* -------------------- */
+/* Exit ticket: */
+/* -------------------- */
+/* Quiz */
+
+
+/* -------------------- */
+/* Stretch Goals: */
+/* -------------------- */
+/* 1. Make your webpage work at different browser widths, including mobile */
+    /* Reamining: */
+        /* 1.a: Collapse navbar */
+/* 2. Add CSS animations */
+/* 3. Design and execute your own wireframe for About, Projects, and Contact pages */
+/* 4. Host your website on Netlify.com */

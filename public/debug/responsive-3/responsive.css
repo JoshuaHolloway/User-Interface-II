@@ -1,0 +1,37 @@
+#Section-portfolio {
+    display: flex;
+    height: 100vh;
+}
+
+@media screen and (min-width: 800px) {
+    #Section-portfolio {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #Section-portfolio {
+        flex-direction: column;
+    }
+}
+
+.Container-row-1, .Container-row-2 {
+    flex-grow: 1;
+}
+
+.Container-row-1 {
+    background: lightblue;
+    display: flex;
+    justify-content: space-around;
+}
+.Container-row-2 {
+    background: lightcoral;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: solid black 2px;
+}
