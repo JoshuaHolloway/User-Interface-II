@@ -3,4 +3,5 @@ h1 { font-family: 'Chelsea Market', cursive; }
 a { text-decoration: none; }
 a, h2, h3, h4, h5, p, span {
     font-family: 'Roboto Mono', monospace;
+    color: white;
 }
