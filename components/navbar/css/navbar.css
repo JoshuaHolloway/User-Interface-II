@@ -35,3 +35,24 @@ nav {
 .Navbar_Nav > .Nav_Item:nth-child(3) { background: #F4B400; }
 .Navbar_Nav > .Nav_Item:nth-child(4) { background: #0F9D58ed; }
 .Navbar_Nav > .Nav_Item > a { color: white; }
+
+.Side-Nav{
+    width: 0; /* Initially collapsed */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
+    transition: 0.8s ease;
+}
+
+.Side-Nav button{
+  /* padding:10px 10px 10px 30px; */
+  /* text-decoration:none; */
+  /* font-size:22px; */
+  /* color:#ccc; */
+  /* display:block; */
+  transition: 0.6s ease;
+}

@@ -5,7 +5,7 @@ const openSlideMenu = () => {
 }
 
 const closeSlideMenu = () => {
-    // document.getElementById('Side-Menu').style.width = '0px';
+    document.getElementById('Side-Menu').style.width = '0px';
     // document.getElementById('Main').style.marginLeft = '0px';
     console.log('.Btn-Close pressed');
 }
