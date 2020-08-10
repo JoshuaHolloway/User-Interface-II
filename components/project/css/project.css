@@ -48,6 +48,12 @@
     background-size: cover;
     background-position: center;
 }
+.Color-Overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0, 0, 0.3);
+    position: absolute;
+}
 
 .Card-Face-Front {
     background: paleturquoise;

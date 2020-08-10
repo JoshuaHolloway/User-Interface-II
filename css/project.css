@@ -38,6 +38,7 @@
     /* Hide the back-side of the faces when they are faced away from the viewer */
     backface-visibility: hidden;
 
+    
 }
 .Image-Container {
     height: 100%;
@@ -47,6 +48,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.Color-Overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+.Image-Container > h4 {
+    z-index: 1;
 }
 
 .Card-Face-Front {
