@@ -10,42 +10,19 @@
     <link rel="stylesheet" href="./css/navbar.css">
 </head>
 <body>
-
-    <button class="Hamburger">
-        <span class="Line"></span>
-        <span class="Line"></span>
-        <span class="Line"></span>
-    </button>
-
-    <style>
-        .Hamburger {
-            height: 100px;
-            width: 100px;
-            background: lightblue;
-            border: black 2px solid;
-            display: flex;
-            justify-content: space-evenly;
-            flex-direction: column;
-            align-items: center;
-            border-radius: 7%;
-        }
-        .Line {
-            width: 60%;
-            height: 2px;
-            background: rgba(0,0,0,.5);
-            border-color: rgba(0,0,0,.1);
-            border-radius: 25%;
-        }
-    </style>
-
     <nav id="Navbar">
+        <button class="Hamburger">
+            <span class="Line"></span>
+            <span class="Line"></span>
+            <span class="Line"></span>
+        </button>
 
-        <div class="Navbar_Nav">
-            <a class="Nav_Item" href="/">Home</a>
-            <a class="Nav_Item" href="/about">About</a>
-            <a class="Nav_Item" href="/contact">Contact</a>
-            <a class="Nav_Item" href="/projects">Projects</a>
-        </div>
+        <ul class="Navbar_Nav">
+            <li class="Nav_Item"><a href="/">Home</a></li>
+            <li class="Nav_Item"><a href="/about">Home</a></li>
+            <li class="Nav_Item"><a href="/contact">Contact</a></li>
+            <li class="Nav_Item"><a href="/projects">Projects</a></li>
+        </ul>
     </nav>
 
 

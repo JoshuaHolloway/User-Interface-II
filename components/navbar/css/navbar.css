@@ -1,3 +1,37 @@
 nav {
     display: flex;
 }
+.Hamburger {
+    height: 100px;
+    width: 100px;
+    background: lightblue;
+    border: black 2px solid;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7%;
+}
+.Hamburger > .Line {
+    width: 60%;
+    height: 2px;
+    background: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,.1);
+    border-radius: 25%;
+}
+.Navbar_Nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.Navbar_Nav > .Nav_Item {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.Navbar_Nav > .Nav_Item:nth-child(1) { background: #4285F4; }
+.Navbar_Nav > .Nav_Item:nth-child(2) { background: #DB4437; }
+.Navbar_Nav > .Nav_Item:nth-child(3) { background: #F4B400; }
+.Navbar_Nav > .Nav_Item:nth-child(4) { background: #0F9D58ed; }
+.Navbar_Nav > .Nav_Item > a { color: white; }
