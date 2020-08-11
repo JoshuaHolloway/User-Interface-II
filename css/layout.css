@@ -56,7 +56,7 @@
     .Page-Container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 
-            200px /* nav */
+            100px /* nav */
             200px /* header-l */
             200px /* header-r */
             200px /* project-1/2 */
