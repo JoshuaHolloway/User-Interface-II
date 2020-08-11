@@ -58,7 +58,46 @@
 
         </div>
     </header>
-    <header id="Header-Right"></header>
+    <header id="Header-Right">
+        <h1>Josh Holloway</h1>
+
+        <button><h5>My Projects</h5></button>
+
+        <p>Here are some words about me and my journey in coding so far. These words are authentic and inspiring. These words tell my storey.</p>
+    </header>
+    <style>
+        #Header-Right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 5% 10% 5% 10%;
+        }
+        #Header-Right > h1 {
+            font-size: 3.4rem;
+        }
+        #Header-Right > button {
+            width: fit-content;
+            padding: 1.5% 3%;
+            border-radius: 8%;
+            background: rgba(255,255,255,0.25);
+            transition: 0.5s;
+        }
+        #Header-Right > button > h5 {
+            color: black;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+        #Header-Right > button:hover {
+            background: rgba(0, 0, 0, 0.25);
+            cursor: crosshair;
+        }
+        #Header-Right > button:hover > h5 {
+            color: white;
+        }
+        #Header-Right > p {
+            font-size: 1.4rem;
+        }
+    </style>
 
     <div class="Project ThreeD-Container" id="Project-1">
         <div class="Card">
