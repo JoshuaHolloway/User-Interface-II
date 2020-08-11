@@ -1,34 +1,34 @@
 :root {
-    --background-color-blue: #0066af;
-    --border-color-blue:   hsl(204, 100%, 90%);
+    --background-color-blue: #D1ECFE;
+    --border-color-blue:   #1F69AD;
     --glow-color-blue: #7f8fa7;
 
-    --background-color-yellow: #0066af;
-    --border-color-yellow: #ceebff;
+    --background-color-yellow: #FDEC3D;
+    --border-color-yellow: #857D1D;
     --glow-color-yellow: rgba(236, 204, 0, 0.62);
 
-    --background-color-pink: #0066af;
-    --border-color-pink: #ceebff;
+    --background-color-pink: #FDD8E6;
+    --border-color-pink: #F70067;
     --glow-color-pink: rgba(189, 135, 189, 0.62);
 
-    --background-color-green: #0066af;
-    --border-color-green: #ceebff;
+    --background-color-green: #87C887;
+    --border-color-green: #377E36;
     --glow-color-green: rgba(70, 255, 173, 0.62);
 
-    --background-color-purple: #0066af;
-    --border-color-purple: #ceebff;
+    --background-color-purple: #B691D2;
+    --border-color-purple: #6918A4;
     --glow-color-purple: #b881d5;
 
-    --background-color-tan: #0066af;
-    --border-color-tan: #ceebff;
+    --background-color-tan: #FBCAAC;
+    --border-color-tan: #333333;
     --glow-color-tan: #ac5479;
 
-    --background-color-grey: #0066af;
-    --border-color-grey: #ceebff;
+    --background-color-grey: #CCCCCC;
+    --border-color-grey: #666666;
     --glow-color-grey: #777777;
      
-    --background-color-brown: #0066af;
-    --border-color-brown: #ceebff;
+    --background-color-brown: #85614F;
+    --border-color-brown: #642F13;
     --glow-color-brown: #a56554;
     
     --background-color-primary: var(--background-color-blue);

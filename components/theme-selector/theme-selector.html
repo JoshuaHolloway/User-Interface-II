@@ -9,12 +9,10 @@
 <body id="body">
     <h1></h1>
 
-    <div id="Theme-Container">
-
+    <!-- <div id="Theme-Container">
         <div class="Row">
             <h5>Color</h5>
-        </div> <!-- /.Row -->
-
+        </div> 
         <div class="Row">
             <div class="Color-Options-Container">
                 <button id="Theme-Blue" class="Active-Theme"></button>
@@ -26,38 +24,83 @@
                 <button id="Theme-Grey"></button>
                 <button id="Theme-Brown"></button>
             </div>    
-        </div> <!-- /.Row -->
-
-    </div>
+        </div>
+    </div> -->
     <!-- /.Theme-Container -->
 
-    <div id="red" class="box"></div>
-    <div id="blue" class="box"></div>
+    <div class="Button-Container">
+        <button id="theme-1" class="box"></button>
+        <button id="theme-2" class="box"></button>
+        <button id="theme-3" class="box"></button>
+        <button id="theme-4" class="box"></button>
+    </div>
+
     <style>
+        .Button-Container {
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            border: salmon 5px solid;
+        }
         .box {
             height: 100px;
             width: 100px;
             border: solid black 5px;
         }
-        #red {
-            background: red;
+        #theme-1 {
+            background: var(--background-color-blue);
+            border: solid 5px var(--border-color-blue);
         }
-        #blue {
-            background: blue;
+        #theme-2 {
+            background: var(--background-color-yellow);
+            border: solid 5px var(--border-color-yellow);
         }
+        #theme-3 {
+            background: var(--background-color-pink);
+            border: solid 5px var(--border-color-pink);
+        }
+        #theme-4 {
+            background: var(--background-color-green);
+            border: solid 5px var(--border-color-green);
+        }
+        
     </style>
     <script>
+
+        const get_css_vals = (color) => {
+            const val = (var_name) => getComputedStyle(document.documentElement)
+            .getPropertyValue(var_name);
+
+            const background = val(`--background-color-${color}`);
+            const border = val(`--border-color-${color}`);
+            const glow = val(`--glow-color-${color}`);
+            return [background, border, glow];
+        };
+
         const elem = name => document.getElementById(name);
-        const red = elem('red');
+        const theme_1 = elem('theme-1');
         const blue = elem('blue');
         const body = elem('body');
-        red.addEventListener('click', () => {
-            console.log('red clicked');
-            body.style.backgroundColor = 'red';
+        elem('theme-1').addEventListener('click', () => {
+            console.log('theme-1 clicked');
+            [background, border, glow] = get_css_vals('blue');
+            body.style.backgroundColor = background;
         });
-        blue.addEventListener('click', () => {
-            console.log('blue clicked');
-            body.style.backgroundColor = 'blue';
+        elem('theme-2').addEventListener('click', () => {
+            console.log('theme-2 clicked');
+            [background, border, glow] = get_css_vals('yellow');
+            body.style.backgroundColor = background;
+        });
+        elem('theme-3').addEventListener('click', () => {
+            console.log('theme-3 clicked');
+            [background, border, glow] = get_css_vals('pink');
+            body.style.backgroundColor = background;
+        });
+        elem('theme-4').addEventListener('click', () => {
+            console.log('theme-4 clicked');
+            [background, border, glow] = get_css_vals('green');
+            body.style.backgroundColor = background;
         });
     </script>
 
