@@ -34,6 +34,7 @@ nav {
     transition: all 0.4s ease;
 }
 .Navbar_Nav > .Nav_Item > a {
+    font-size: 2.2rem;
     display: grid;
     place-items: center;
     height: 100%;
