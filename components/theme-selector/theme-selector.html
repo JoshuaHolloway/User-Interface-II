@@ -9,150 +9,16 @@
 <body id="body">
  
     <div class="Button-Container">
-        <button id="theme-1" class="box"></button>
-        <button id="theme-2" class="box"></button>
-        <button id="theme-3" class="box"></button>
-        <button id="theme-4" class="box"></button>
-
-        <button id="theme-5" class="box"></button>
-        <button id="theme-6" class="box"></button>
-        <button id="theme-7" class="box"></button>
-        <button id="theme-8" class="box"></button>
-
+        <button id="theme-1"></button>
+        <button id="theme-2"></button>
+        <button id="theme-3"></button>
+        <button id="theme-4"></button>
+        <button id="theme-5"></button>
+        <button id="theme-6"></button>
+        <button id="theme-7"></button>
+        <button id="theme-8"></button>
     </div>
 
-    <style>
-        .Button-Container {
-            display: inline-grid;
-            grid-gap: 0px;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            border: salmon 5px solid;
-            background: rgba(0, 0, 0, 0.7);
-        }
-        .Button-Container > button {
-            padding: 7px;
-            border: 2px solid #000;
-            border-radius: 5px;
-            margin: 9px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .Color-Options-Container > button:hover {
-            transform: scale(2, 2);
-        }
-
-        #theme-1 {
-            background: var(--background-color-blue);
-            border: solid 5px var(--border-color-blue);
-            /* box-shadow: 0 0 10px 4px var(--glow-color-blue); */
-        }
-        #theme-2 {
-            background: var(--background-color-yellow);
-            border: solid 5px var(--border-color-yellow);
-            /* box-shadow: 0 0 10px 4px var(--glow-color-yellow); */
-        }
-        #theme-3 {
-            background: var(--background-color-pink);
-            border: solid 5px var(--border-color-pink);
-            /* box-shadow: 0 0 10px 4px var(--glow-color-pink); */
-        }
-        #theme-4 {
-            background: var(--background-color-green);
-            border: solid 5px var(--border-color-green);
-            /* box-shadow: 0 0 10px 4px var(--glow-color-green); */
-        }
-        #theme-5 {
-            background: var(--background-color-purple);
-            border: solid 5px var(--border-color-purple);
-            /* box-shadow: 0 0 10px 4px var(--glow-color-purple); */
-        }
-        #theme-6 {
-            background: var(--background-color-tan);
-            border: solid 5px var(--border-color-tan);
-            /* box-shadow: 0 0 10px 4px var(--glow-color-tan); */
-        }
-        #theme-7 {
-            background: var(--background-color-grey);
-            border: solid 5px var(--border-color-grey);
-            /* box-shadow: 0 0 10px 4px var(--glow-color-grey); */
-        }
-        #theme-8 {
-            background: var(--background-color-brown);
-            border: solid 5px var(--border-color-brown);
-            /* box-shadow: 0 0 10px 4px var(--glow-color-brown); */
-        }
-    </style>
-    <script>
-
-        const get_css_vals = (color) => {
-            const val = (var_name) => getComputedStyle(document.documentElement)
-            .getPropertyValue(var_name);
-
-            const background = val(`--background-color-${color}`);
-            const border = val(`--border-color-${color}`);
-            const glow = val(`--glow-color-${color}`);
-            return [background, border, glow];
-        };
-
-        const elem = name => document.getElementById(name);
-        const theme_1 = elem('theme-1');
-        const blue = elem('blue');
-        const body = elem('body');
-
-        const setup_theme_callback = (num, color) => {
-            elem(`theme-${num}`).addEventListener('click', () => {
-                [background, border, glow] = get_css_vals(color);
-                body.style.backgroundColor = background;
-
-                // this.style.boxShadow = '0 0 10px 4px var(--glow-color-primary);';
-
-                // Turn off all other active-classes:
-                for(let i = 1; i <= 8; ++i) {
-                    elem(`theme-${i}`).classList.remove('Active-Theme');
-                    // elem(`theme-${num}`).style.boxShadow = `none`;
-                }
-                    
-
-                // Now set the single active-class:
-                console.log(elem(`theme-${num}`));
-                elem(`theme-${num}`).classList.toggle('Active-Theme');
-                                        // box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
-                // elem(`theme-${num}`).style.boxShadow = `0 0 40px 16px var(--glow-color-${color})`;
-                // const active = document.querySelector('.Active-Theme');
-                // console.log(active);
-                // active.style.boxShadow = `0 0 10px 4px var(--glow-color-${color})`;
-
-                const set_css_var_val = (css_var_name, new_val) => {
-                    document.documentElement.style
-                        .setProperty(css_var_name, new_val);
-                };
-                const get_css_var_val = (css_var_name) => {
-                    const css_var_val = getComputedStyle(document.documentElement)
-                    .getPropertyValue(css_var_name);
-                    return css_var_val;
-                };
-
-                set_css_var_val(`--glow-color-primary`, glow);
-                console.log('--glow-color-primary: ' + get_css_var_val('--glow-color-primary'));
-
-            });            
-        };
-
-        const colors = ['blue', 'yellow', 'pink', 'green', 'purple', 'tan', 'grey', 'brown'];
-
-
-        for (let i = 1; i <= colors.length; ++i)
-            setup_theme_callback(i, colors[i - 1]);
-
-
-
-
-
-
-    </script>
-
-    <!-- https://stackoverflow.com/a/8876069 -->
     <script src="./js/theme-selector.js"></script>
 </body>
 </html>
