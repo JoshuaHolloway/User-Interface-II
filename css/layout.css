@@ -1,3 +1,6 @@
+@import url('./debug.css');
+@import url('./background-colors.css');
+
 /* XX-Large:  1400 and up */
 .Page-Container { /* >= 1400 */
     display: grid;
@@ -120,24 +123,23 @@
 
 nav {
     grid-area: nav;
-    background: cyan;
-    border: solid black 5px;
+    border: var(--debug-border-0);
 }
 
 #Header-Left {
     grid-area: header-l;
-    border: solid orange 5px;
-    background: palegreen;
+    border: var(--debug-border-1);
+    background: var(--background-1);
 }
 #Header-Right {
     grid-area: header-r;
-    border: solid orangered 5px;
-    background: yellowgreen;
+    border: var(--debug-border-2);
+    background: var(--background-2);
 }
 
 .Project {
-    background: hotpink;
-    border: solid black 5px;
+    background: var(--background-3);
+    border: var(--debug-border-0);
     font-size: 50px;
     display: grid;
     place-items: center;
@@ -151,14 +153,12 @@ nav {
 #Project-7 { grid-area: project-7; }
 #Project-8 { grid-area: project-8; }
 
-
 .Projects-Container {
-    border: solid 5px hotpink;
     grid-area: projects
 }
 
 footer {
     grid-area: footer;
-    border: solid blue 5px;
-    background: plum;
+    border: var(--debug-border-1);
+    background: var(--background-4);
 }
