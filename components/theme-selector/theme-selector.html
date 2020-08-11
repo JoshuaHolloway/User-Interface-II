@@ -44,15 +44,25 @@
     <style>
         .Button-Container {
             display: inline-grid;
-            grid-gap: 5px;
+            grid-gap: 0px;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(2, 1fr);
             border: salmon 5px solid;
         }
-        .box {
-            height: 100px;
-            width: 100px;
-            border: solid black 5px;
+        .Button-Container > button {
+            padding: 7px;
+            border: 2px solid #000;
+            border-radius: 5px;
+            margin: 9px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .Color-Options-Container > button:hover {
+            transform: scale(2, 2);
+        }
+
+        .Active-Theme { box-shadow: 0 0 10px 4px var(--glow-color-primary); }
+
         }
         #theme-1 {
             background: var(--background-color-blue);
