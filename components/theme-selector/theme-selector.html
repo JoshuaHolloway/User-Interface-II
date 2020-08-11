@@ -28,6 +28,7 @@
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(2, 1fr);
             border: salmon 5px solid;
+            background: rgba(0, 0, 0, 0.7);
         }
         .Button-Container > button {
             padding: 7px;
@@ -121,6 +122,20 @@
                 // const active = document.querySelector('.Active-Theme');
                 // console.log(active);
                 // active.style.boxShadow = `0 0 10px 4px var(--glow-color-${color})`;
+
+                const set_css_var_val = (css_var_name, new_val) => {
+                    document.documentElement.style
+                        .setProperty(css_var_name, new_val);
+                };
+                const get_css_var_val = (css_var_name) => {
+                    const css_var_val = getComputedStyle(document.documentElement)
+                    .getPropertyValue(css_var_name);
+                    return css_var_val;
+                };
+
+                set_css_var_val(`--glow-color-primary`, glow);
+                console.log('--glow-color-primary: ' + get_css_var_val('--glow-color-primary'));
+
             });            
         };
 
