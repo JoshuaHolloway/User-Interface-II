@@ -33,13 +33,19 @@
         <button id="theme-2" class="box"></button>
         <button id="theme-3" class="box"></button>
         <button id="theme-4" class="box"></button>
+
+        <button id="theme-5" class="box"></button>
+        <button id="theme-6" class="box"></button>
+        <button id="theme-7" class="box"></button>
+        <button id="theme-8" class="box"></button>
+
     </div>
 
     <style>
         .Button-Container {
             display: grid;
             grid-gap: 5px;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(2, 1fr);
             border: salmon 5px solid;
         }
@@ -64,7 +70,22 @@
             background: var(--background-color-green);
             border: solid 5px var(--border-color-green);
         }
-        
+        #theme-5 {
+            background: var(--background-color-purple);
+            border: solid 5px var(--border-color-purple);
+        }
+        #theme-6 {
+            background: var(--background-color-tan);
+            border: solid 5px var(--border-color-tan);
+        }
+        #theme-7 {
+            background: var(--background-color-grey);
+            border: solid 5px var(--border-color-grey);
+        }
+        #theme-8 {
+            background: var(--background-color-brown);
+            border: solid 5px var(--border-color-brown);
+        }
     </style>
     <script>
 
@@ -82,26 +103,25 @@
         const theme_1 = elem('theme-1');
         const blue = elem('blue');
         const body = elem('body');
-        elem('theme-1').addEventListener('click', () => {
-            console.log('theme-1 clicked');
-            [background, border, glow] = get_css_vals('blue');
-            body.style.backgroundColor = background;
-        });
-        elem('theme-2').addEventListener('click', () => {
-            console.log('theme-2 clicked');
-            [background, border, glow] = get_css_vals('yellow');
-            body.style.backgroundColor = background;
-        });
-        elem('theme-3').addEventListener('click', () => {
-            console.log('theme-3 clicked');
-            [background, border, glow] = get_css_vals('pink');
-            body.style.backgroundColor = background;
-        });
-        elem('theme-4').addEventListener('click', () => {
-            console.log('theme-4 clicked');
-            [background, border, glow] = get_css_vals('green');
-            body.style.backgroundColor = background;
-        });
+
+        const setup_theme_callback = (num, color) => {
+            elem(`theme-${num}`).addEventListener('click', () => {
+                [background, border, glow] = get_css_vals(color);
+                body.style.backgroundColor = background;
+            });            
+        };
+
+        const colors = ['blue', 'yellow', 'pink', 'green', 'purple', 'tan', 'grey', 'brown'];
+
+
+        for (let i = 1; i <= colors.length; ++i)
+            setup_theme_callback(i, colors[i - 1]);
+
+
+
+
+
+
     </script>
 
     <!-- https://stackoverflow.com/a/8876069 -->
