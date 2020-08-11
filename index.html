@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/project.css">
     <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/theme-selector.css">
 </head>
-<body>
+<body id="body">
 
-  <div class="Page-Container">
+  <div class="Page-Container" style="padding: 0 10%;">
 
     <nav id="Navbar">
         <button class="Hamburger" onclick="openSlideMenu()">
@@ -39,7 +40,18 @@
         </div>
     </div>
 
-    <header id="Header-Left"></header>
+    <header id="Header-Left">
+        <div class="Button-Container">
+            <button id="theme-1"></button>
+            <button id="theme-2"></button>
+            <button id="theme-3"></button>
+            <button id="theme-4"></button>
+            <button id="theme-5"></button>
+            <button id="theme-6"></button>
+            <button id="theme-7"></button>
+            <button id="theme-8"></button>
+        </div>
+    </header>
     <header id="Header-Right"></header>
 
     <div class="Project ThreeD-Container" id="Project-1">
@@ -168,5 +180,6 @@
 
   <!-- <script src="./js/main.js"></script> -->
   <script src="./js/navbar.js"></script>
+  <script src="./js/theme-selector.js"></script>
 </body>
 </html>
