@@ -1,9 +1,6 @@
 * Live Deployed URL
 	* https://003-css-layout.netlify.app
 
-* Demo video:
-	* https://drive.google.com/file/d/1KEn3P2MsAcZJYL1IWB1SWts8rmv2IDLy/view?usp=sharing
-
 * Pull Request URL (For Project-2)
 	* https://github.com/JoshuaHolloway/User-Interface-II/pull/2
 
