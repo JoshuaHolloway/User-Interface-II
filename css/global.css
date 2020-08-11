@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Mono&display=swap');
-h1 { font-family: 'Chelsea Market', cursive; }
+:root {
+    --Title-Font: 'Chelsea Market', cursive;
+}
+h1 { font-family: var(--Title-Font); }
 a { text-decoration: none; }
 a, h2, h3, h4, h5, p, span {
     font-family: 'Roboto Mono', monospace;

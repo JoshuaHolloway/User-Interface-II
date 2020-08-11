@@ -61,7 +61,7 @@
     <header id="Header-Right">
         <h1>Josh Holloway</h1>
 
-        <button><h5>My Projects</h5></button>
+        <button class="Button"><h5>My Projects</h5></button>
 
         <p>Here are some words about me and my journey in coding so far. These words are authentic and inspiring. These words tell my storey.</p>
     </header>
@@ -75,23 +75,24 @@
         #Header-Right > h1 {
             font-size: 3.4rem;
         }
-        #Header-Right > button {
+        .Button {
             width: fit-content;
-            padding: 1.5% 3%;
+            /* padding: 1.5% 3%; */
+            padding: 8px 20px;
             border-radius: 8%;
             background: rgba(255,255,255,0.25);
-            transition: 0.5s;
+            transition: 0.5s;            
         }
-        #Header-Right > button > h5 {
+        .Button > h5 {
             color: black;
             font-weight: bold;
             transition: 0.5s;
         }
-        #Header-Right > button:hover {
+        .Button:hover {
             background: rgba(0, 0, 0, 0.25);
             cursor: crosshair;
         }
-        #Header-Right > button:hover > h5 {
+        .Button:hover > h5 {
             color: white;
         }
         #Header-Right > p {
@@ -220,8 +221,8 @@
     <!-- /.Project -->
 
     <footer>
-        <h4>Like what you see?</h4>
-        <button>Contact Me</button>
+        <h4 class="Footer-Title">Like what you see?</h4>
+        <button class="Button"><h5>Contact Me</h5></button>
     </footer>
     <style>
         footer {
@@ -229,7 +230,11 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            padding: 1.5%;
+            padding: 0.6%;
+        }
+        .Footer-Title {
+            font-size: 2.6rem;
+            font-family: var(--Title-Font);
         }
     </style>
   </div>
