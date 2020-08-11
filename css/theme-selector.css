@@ -52,8 +52,8 @@
     cursor: pointer;
     transition: 0.3s;
 }
-.Color-Options-Container > button:hover {
-    transform: scale(2, 2);
+.Button-Container > button:hover {
+    transform: scale(1.75, 1.75);
 }
 #theme-1 {
     background: var(--background-color-blue);
