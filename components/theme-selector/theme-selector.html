@@ -6,7 +6,7 @@
     <title>DEV | Project Component</title>
     <link rel="stylesheet" href="./css/theme-selector.css">
 </head>
-<body>
+<body id="body">
     <h1></h1>
 
     <div id="Theme-Container">
@@ -30,6 +30,36 @@
 
     </div>
     <!-- /.Theme-Container -->
+
+    <div id="red" class="box"></div>
+    <div id="blue" class="box"></div>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            border: solid black 5px;
+        }
+        #red {
+            background: red;
+        }
+        #blue {
+            background: blue;
+        }
+    </style>
+    <script>
+        const elem = name => document.getElementById(name);
+        const red = elem('red');
+        const blue = elem('blue');
+        const body = elem('body');
+        red.addEventListener('click', () => {
+            console.log('red clicked');
+            body.style.backgroundColor = 'red';
+        });
+        blue.addEventListener('click', () => {
+            console.log('blue clicked');
+            body.style.backgroundColor = 'blue';
+        });
+    </script>
 
     <!-- https://stackoverflow.com/a/8876069 -->
     <script src="./js/theme-selector.js"></script>
